@@ -1,0 +1,108 @@
+/* Sayfa genel stili */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/stadium-2606345_1280.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.scoreboard-container {
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+  border: 3px solid #00cc00;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border: 5px solid #00cc00;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.team {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  background: rgba(30, 30, 30, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #00cc00;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #00cc00;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 4rem;
+  color: #00cc00;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #00cc00;
+  color: white;
+  padding: 15px 30px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+  font-family: "Courier New", Courier, monospace;
+}
+
+button:hover {
+  background-color: #009900;
+}
+
+button:before {
+  content: "\26BD";
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
+}
+
+button:active {
+  background-color: #009900;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
